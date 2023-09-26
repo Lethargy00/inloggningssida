@@ -1,6 +1,7 @@
 function checkLoginStatus() {
     if (localStorage.getItem ("loggedIn") === "true") {
         document.getElementById("message").innerHTML = "Välkommen, du är nu inloggad";
+        document.getElementById("loginHeader").textContent = "Välkommen!"
         hideLoginForm();
         showLogoutButton();
     }
@@ -24,6 +25,7 @@ function logout() {
     showLoginForm();
     hideLogoutButton();
     document.getElementById("message").innerHTML = "";
+    document.getElementById("loginHeader").textContent = "Logga in"
 }
 
 
@@ -48,6 +50,7 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
 
     if (username === namn && password === lösenord) {
         document.getElementById("message").innerHTML = "Välkommen, du är nu inloggad";
+        document.getElementById("loginHeader").textContent = "Välkommen!"
         localStorage.setItem("loggedIn", rememberMe)
         hideLoginForm();
         showLogoutButton();
