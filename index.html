@@ -10,36 +10,39 @@
     <header>
       <h1>Välkommen till Brukhundsklubben i Östmahamn</h1>
     </header>
+    <div class="background"></div>
     <div class="loginContainer">
-      <h1 id="loginHeader">Logga in</h1>
-      <form id="login-form">
-        <input
-          type="text"
-          id="username"
-          name="username"
-          placeholder="Användarnamn"
-          required
-        /><br /><br />
-        <input
-          type="password"
-          id="password"
-          name="password"
-          placeholder="Lösenord"
-          required
-        /><br /><br />
-        <div id="boxcheck">
-          <input type="checkbox" id="remember-me" name="remember-me" />Kom ihåg
-          mig.
-        </div>
-        <br /><br />
-        <button type="submit" id="login">Login</button>
-      </form>
-      <div id="message"></div>
-      <button id="logout-button" style="display: none">Logout</button>
+      <div>
+        <h1 id="loginHeader">Logga in</h1>
+        <form id="login-form">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Användarnamn"
+            required
+          /><br /><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Lösenord"
+            required
+          /><br /><br />
+          <div id="boxcheck">
+            <input type="checkbox" id="remember-me" name="remember-me" />Kom
+            ihåg mig.
+          </div>
+          <br /><br />
+          <button type="submit" id="login">Login</button>
+        </form>
+        <div id="message"></div>
+        <button id="logout-button" style="display: none">Logout</button>
+      </div>
     </div>
 
     <footer>
-      <p>meow</p>
+      <p>Copyright © 2023, Brukhundsklubben®</p>
     </footer>
     <script src="./script.js"></script>
   </body>

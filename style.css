@@ -8,16 +8,28 @@ header > h1 {
 }
 
 body {
-    
     margin: 0px;
+}
+
+body > img {
+    filter: blur(8px);
+}
+
+.background {
+    background-image: url(./images/background.jpeg);
+    filter: blur(8px);
+    height: 100vh;
 }
 
 .loginContainer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 60vh;
+}
+
+.loginContainer > div > img {
+    height: 260px;
 }
 
 #login-form{
