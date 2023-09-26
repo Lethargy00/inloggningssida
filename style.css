@@ -1,3 +1,17 @@
+header {
+    padding: 0.25px;
+    background-color: lightblue;
+}
+
+header > h1 {
+    margin-left: 20px;
+}
+
+body {
+    
+    margin: 0px;
+}
+
 .loginContainer {
     display: flex;
     flex-direction: column;
@@ -9,5 +23,23 @@
 #login-form{
     display: grid;
     grid-template-columns: 250px;
+    grid-template-rows: 50px 10px 50px 10px 25px 10px 50px 0px;
+}
 
+#login {
+    background-color: lightblue;
+}
+
+#login:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+    text-align: center;
 }

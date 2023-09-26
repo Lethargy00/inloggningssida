@@ -26,6 +26,8 @@ function logout() {
     hideLogoutButton();
     document.getElementById("message").innerHTML = "";
     document.getElementById("loginHeader").textContent = "Logga in"
+
+    location.reload();
 }
 
 

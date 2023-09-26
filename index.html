@@ -27,14 +27,20 @@
           placeholder="Lösenord"
           required
         /><br /><br />
-        <input type="checkbox" id="remember-me" name="remember-me" />Kom ihåg
-        mig<br /><br />
-        <button type="submit">Login</button>
+        <div id="boxcheck">
+          <input type="checkbox" id="remember-me" name="remember-me" />Kom ihåg
+          mig.
+        </div>
+        <br /><br />
+        <button type="submit" id="login">Login</button>
       </form>
       <div id="message"></div>
       <button id="logout-button" style="display: none">Logout</button>
     </div>
 
+    <footer>
+      <p>meow</p>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
