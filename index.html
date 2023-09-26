@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Välkommen till Brukhundsklubben i Östmahamn</h1>
+    </header>
+    <div class="loginContainer">
+      <h1>Login</h1>
+      <form id="login-form">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Användarnamn"
+          required
+        /><br /><br />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Lösenord"
+          required
+        /><br /><br />
+        <input type="checkbox" id="remember-me" name="remember-me" />Kom ihåg
+        mig<br /><br />
+        <button type="submit">Login</button>
+      </form>
+      <div id="message"></div>
+      <button id="logout-button" style="display: none">Logout</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
