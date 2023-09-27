@@ -8,6 +8,7 @@ header > h1 {
 }
 
 body {
+    font-family: 'Roboto';
     margin: 0px;
     display: flex;
     flex-direction: column;
@@ -65,6 +66,17 @@ body > img {
     display: grid;
     grid-template-columns: 250px;
     grid-template-rows: 50px 10px 50px 10px 25px 10px 50px 0px;
+}
+
+#logout-button {
+    background-color: lightblue;
+    width: 250px;
+    height: 50px;
+}
+
+#logout-button:hover {
+    background-color: aquamarine;
+    cursor: pointer;
 }
 
 #login {
