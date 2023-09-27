@@ -5,39 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/61a5b666ff.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <h1>Välkommen till Brukhundsklubben i Östmahamn</h1>
     </header>
     <div class="background"></div>
-    <div class="loginContainer">
-      <div>
-        <h1 id="loginHeader">Logga in</h1>
-        <form id="login-form">
-          <input
-            type="text"
-            id="username"
-            name="username"
-            placeholder="Användarnamn"
-            required
-          /><br /><br />
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Lösenord"
-            required
-          /><br /><br />
-          <div id="boxcheck">
-            <input type="checkbox" id="remember-me" name="remember-me" />Kom
-            ihåg mig.
-          </div>
-          <br /><br />
-          <button type="submit" id="login">Login</button>
-        </form>
-        <div id="message"></div>
-        <button id="logout-button" style="display: none">Logout</button>
+    <div class="container">
+      <div class="loginContainer">
+        <div>
+          <h1 id="loginHeader">Logga in</h1>
+          <form id="login-form">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Användarnamn"
+              required
+            /><br /><br />
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Lösenord"
+              required
+            /><br /><br />
+            <div id="boxcheck">
+              <input type="checkbox" id="remember-me" name="remember-me" />Kom
+              ihåg mig.
+            </div>
+            <br /><br />
+            <button type="submit" id="login">Login</button>
+          </form>
+          <br />
+          <div id="message"></div>
+          <div id="messageTwo"></div>
+          <button id="logout-button" style="display: none">Logout</button>
+        </div>
+      </div>
+      <div class="rules">
+        <h1>Regler</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum facilis
+          temporibus voluptas, recusandae accusamus id sint. A optio, quisquam
+          illum quod quo molestiae nihil impedit autem ipsum vero voluptates
+          maiores!
+        </p>
       </div>
     </div>
 

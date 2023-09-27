@@ -25,6 +25,7 @@ function logout() {
     showLoginForm();
     hideLogoutButton();
     document.getElementById("message").innerHTML = "";
+    document.getElementById("messageTwo").innerHTML = "";
     document.getElementById("loginHeader").textContent = "Logga in"
 
     location.reload();
@@ -53,12 +54,13 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
     if (username === namn && password === lösenord) {
         document.getElementById("message").innerHTML = "Välkommen, du är nu inloggad";
         document.getElementById("loginHeader").textContent = "Välkommen!"
+        document.getElementById("messageTwo").innerHTML = "";
         localStorage.setItem("loggedIn", rememberMe)
         hideLoginForm();
         showLogoutButton();
 
     } else {
-        document.getElementById("message").innerHTML = "Ogiltiga inloggningsuppgifter";
+        document.getElementById("messageTwo").innerHTML = "Ogiltiga inloggningsuppgifter";
     }
 });
 
